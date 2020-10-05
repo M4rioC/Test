@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #e1e7fe;
+        background-size: cover;
+    }
+
+    .form {
+        font-family: sans-serif;
+        position: absolute;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 300px;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 10px, 45px, 30px, 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+    }
+
+        .form p {
+            font-size: 25px;
+            padding: 1px;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .form input {
+            outline: 0;
+            border-radius: 10px;
+            background: #F2F2F2;
+            max-width: 230px;
+            width: 100%;
+            border: 0;
+            margin: 15px 15px 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+            .form input:hover {
+                background-color: #D3F8F9;
+                transition: all 1s ease 8s;
+            }
+
+            .form input:focus {
+                background-color: #D3F8F9;
+                transition: all 1s ease 0s;
+            }
+
+        .form button {
+            text-transform: uppercase;
+            outline: 0;
+            border-radius: 10px;
+            background: #496ff9;
+            max-width: 230px;
+            width: 100%;
+            border: 0;
+            margin: 30px 15px 15px 15px;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+            .form button:hover, .form button:active, .form button:focus {
+                background-color: #3660f8;
+            }
+
+        .form .message {
+            margin: 15px 15px 30px 15px;
+            color: #B3B3B3;
+            font-size: 12px;
+        }
+
+            .form .message a {
+                color: #496ff9;
+                text-decoration: none;
+            }
+</style>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="form">
+        <p><b>Iniciar sesión</b></p>
+        <form method="post">
+            <input type="text" name="email" value="" placeholder="Correo" />
+            <input type="text" name="password" value="" placeholder="Contraseña" />
+            <button type="submit">Iniciar sesión</button>
+            <p class="message">¿No estás registrado? <a href="~/Home/SignIn">Crea una cuenta</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
